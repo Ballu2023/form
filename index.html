@@ -1,0 +1,65 @@
+<!docktype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>this is my website</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="interger">
+      
+<form action="" onsubmit="return validationform()">
+      <h1>login</h1>
+<input type="text" placeholder="enter username" id="username" class="int"><br>
+<p id="usererror" class="error"></p>
+<input type="password" placeholder="enter password" class="int" id="password">
+<p id="passerror" class="error"></p>
+    <input type="submit" class="btn">
+        </form>
+    </div>
+    
+<script>
+    var username = document.getElementById("username")
+    var password = document.getElementById("password")
+    var flag = 0;
+    
+    function validationform(){
+    if(username.value == ""){
+    document.getElementById("usererror").innerHTML = "please enter your username";
+    flag = 0;
+    
+    }else if(username.value.length < 3){
+    document.getElementById("usererror").innerHTML = "please enter atleats 3 character"
+    flag = 0;
+    }else{
+    document.getElementById("usererror").innerHTML = "";
+     flag = 1;
+    }  
+   
+    
+    if(password.value == ""){
+    document.getElementById("passerror").innerHTML = "please enter you password"
+     flag = 0;
+    }else{
+     document.getElementById("passerror").innerHTML = "";
+         flag = 1;
+    }if(flag){
+    return true
+    }else{
+    return false;
+    }
+    
+    
+   }  
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>

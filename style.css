@@ -1,0 +1,35 @@
+body{
+background-color: grey;
+}
+.interger{
+display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: ;
+}
+form{
+text-align: center;
+margin-top: 150px;
+background: white;
+width: 550px;
+height: 400px;
+padding: 25px;
+}
+.int{
+width: 100%;
+height: 50px;
+    margin-bottom: 20px;
+}
+.error{
+text-align: left;
+    color: darkred;
+    font-size: 20px;
+}
+.btn{
+width: 150px;
+    padding: 5px;
+    font-size: 30px;
+    background-color: dodgerblue;
+    color: white;
+}
+
